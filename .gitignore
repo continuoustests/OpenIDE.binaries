@@ -1,2 +1,3 @@
 .OpenIDE
 oi-definitions.json
+*.pyc
