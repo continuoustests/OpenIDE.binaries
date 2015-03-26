@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "$1" != "" ]; then
+    cd "$1"
+fi
+
+PORT=$(echo $[ 4000 + $[ RANDOM % 10000 ]])
+oi editor vim --editor.vim.headless=true --editor.vim.port=$PORT
+vim -nb:127.0.0.1:$PORT:mypass -c "map <F8> <F21>"
