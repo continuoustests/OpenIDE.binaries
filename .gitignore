@@ -1,3 +1,4 @@
 .OpenIDE
 oi-definitions.json
 *.pyc
+initialize.sh
